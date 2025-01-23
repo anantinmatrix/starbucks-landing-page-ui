@@ -360,7 +360,7 @@ nav {
 /* section 4 starts here made by chat gpt */
 .endless-extras {
     text-align: center;
-    padding: 3rem 8%;
+    padding: 3rem 5rem;
 
 }
 
@@ -383,8 +383,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
+
 }
 
 .benefit {
@@ -444,5 +443,9 @@ nav {
     }
     .methods_section .method {
         width: 75% !important;
+    }
+    .benefits {
+        flex-wrap: wrap;
+        flex: 1 1 auto;
     }
 }
