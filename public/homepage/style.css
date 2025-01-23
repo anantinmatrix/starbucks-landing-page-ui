@@ -24,7 +24,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8%;
+    padding: 0 4vw;
     position: relative;
     border-bottom: 3px solid rgb(226, 237, 233);
 }
@@ -159,7 +159,7 @@ nav .bottombar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8%;
+    padding: 1em 2em;
     box-shadow: 0px .5px 3px 0px;
     position: relative;
 }
@@ -181,13 +181,15 @@ nav .bottombar{
     font-weight: 550;
 }
 .handcrafted{
-    height: 14rem;
+    /* height: 14rem; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
     gap: 2rem;
     background-color: rgb(255, 255, 255);
-    padding: 2rem 8%;
+    padding: 2rem 4rem;
     box-shadow: 0 0 3px 0 black;
 }
 .handcrafted .handcrafted_text h3{
@@ -212,11 +214,14 @@ nav .bottombar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: clamp(100px, 10vw, 150px);
+    text-align: center;
+    margin-top: 5px;
 
 }
 .handcrafted_items div img{
-    height: 108px;
-    width: 108px;
+    height: 100%;
+    width: 100%;
     border-radius: 100px;
 }
 .barista_rec{
@@ -475,4 +480,15 @@ nav .bottombar{
     font-family: var(--font3);
     font-size: 14px;
     letter-spacing: .4px;
+}
+
+
+
+@media (max-width: 500px) {
+    nav{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        height: 150px !important;
+    }
 }
